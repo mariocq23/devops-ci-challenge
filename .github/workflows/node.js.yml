@@ -19,6 +19,9 @@ jobs:
       with:
         node-version: 14.x
         cache: 'npm'
-    - run: npm hello
-    - run: npm how-are-you
-    - run: npm bye
+    - run: npm install prettier 
+    - run: npm install
+    - run: npm run lint
+    - run: npm run prettier
+    - run: npm run test
+    - run: npm run build
