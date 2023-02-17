@@ -19,6 +19,7 @@ jobs:
       with:
         node-version: 14.x
         cache: 'npm'
+    - run: npm install prettier 
     - run: npm install
     - run: npm run lint
     - run: npm run prettier
