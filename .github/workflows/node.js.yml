@@ -14,4 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: docker build -t mariocq/devops-ci-challenge .   
+    - run: docker build -t mariocq/devops-ci-challenge .
+  push:
+    runs-on: ubuntu-latest
+    steps:
+    - run: docker login --username mariocq --password dckr_pat_HcUAmjqBONk7dGUE5S9wiiPeS_s
+    - run: docker push mariocq/devops-ci-challenge
+  
