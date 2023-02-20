@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: docker login --username mariocq --password dckr_pat_HcUAmjqBONk7dGUE5S9wiiPeS_s
-    - run: docker push docker.io/mariocq/devops-ci-challenge
+    - run: docker images #push docker.io/mariocq/devops-ci-challenge
   
