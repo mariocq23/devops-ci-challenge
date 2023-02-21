@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-app
+  namespace: production
+  labels:
+    app: hello-app
+spec:
+  restartPolicy: Never
+  hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "fsl-challenge.me"
+  containers:
+  - name: devops-ci-challenge
+    image: mariocq/devops-ci-challenge:latest
